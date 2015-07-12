@@ -42,8 +42,8 @@ function CDuck(oContainer){
         var oData = {
                         images: [oSprite], 
                         // width, height & registration point of each sprite
-                        frames: {width: 200, height: 204, regX: 100, regY: 102}, 
-                        animations: {  fly: [0,6,"fly"],hit: [7,15,"hit_stop"],hit_stop:[15],fall: [16,44,"fall"]}
+                        frames: {width: 175, height: 233, regX: 100, regY: 102}, 
+                        animations: {  fly: [1,1,"fly"],hit: [2,2,"hit_stop"],hit_stop:[2],fall: [16,44,"fall"]}
                        
         };     
         
@@ -51,8 +51,8 @@ function CDuck(oContainer){
         var oData2 = {
                         images: [oSprite2], 
                         // width, height & registration point of each sprite
-                        frames: {width: 200, height: 204, regX: 100, regY: 102}, 
-                        animations: {  fly: [0,6,"fly"],hit: [7,15,"hit_stop"],hit_stop:[15],fall: [16,44,"fall"]}
+                        frames: {width: 175, height: 233, regX: 100, regY: 102}, 
+                        animations: {  fly: [1, 1, "fly"],hit: [2,2, "hit_stop"],hit_stop:[2],fall: [16,44, "fall"]}
                        
         };
         
@@ -61,7 +61,7 @@ function CDuck(oContainer){
                         images: [oSprite3], 
                         // width, height & registration point of each sprite
                         frames: {width: 200, height: 204, regX: 100, regY: 102}, 
-                        animations: {  fly: [0,6,"fly"],hit: [7,15,"hit_stop"],hit_stop:[15],fall: [16,44,"fall"]}
+                        animations: {  fly: [1,1,"fly"],hit: [2,2,"hit_stop"],hit_stop:[2],fall: [16,44,"fall"]}
                        
         };
         
@@ -70,7 +70,7 @@ function CDuck(oContainer){
                         images: [oSprite4], 
                         // width, height & registration point of each sprite
                         frames: {width: 200, height: 204, regX: 100, regY: 102}, 
-                        animations: {  fly: [0,6,"fly"],hit: [7,15,"hit_stop"],hit_stop:[15],fall: [16,44,"fall"]}
+                        animations: {  fly: [1,1,"fly"],hit: [2, 2,"hit_stop"],hit_stop:[2],fall: [16,44,"fall"]}
                        
         };
 
@@ -79,7 +79,7 @@ function CDuck(oContainer){
                         images: [oSprite5], 
                         // width, height & registration point of each sprite
                         frames: {width: 200, height: 204, regX: 100, regY: 102}, 
-                        animations: {  fly: [0,6,"fly"],hit: [7,15,"hit_stop"],hit_stop:[15],fall: [16,44,"fall"]}
+                        animations: {  fly: [1, 1,"fly"],hit: [2, 2,"hit_stop"],hit_stop:[2],fall: [16,44,"fall"]}
                        
         };
 
@@ -88,7 +88,7 @@ function CDuck(oContainer){
                         images: [oSprite6], 
                         // width, height & registration point of each sprite
                         frames: {width: 200, height: 204, regX: 100, regY: 102}, 
-                        animations: {  fly: [0,6,"fly"],hit: [7,15,"hit_stop"],hit_stop:[15],fall: [16,44,"fall"]}
+                        animations: {  fly: [1, 1,"fly"],hit: [2, 2,"hit_stop"],hit_stop:[2],fall: [16,44,"fall"]}
                        
         };
         
