@@ -94,7 +94,7 @@ function CMain(oData){
         s_oSpriteLibrary.addSprite("but_play","./images/play.png"); // ***
         s_oSpriteLibrary.addSprite("but_exit","./images/close.png"); // ***
         s_oSpriteLibrary.addSprite("bg_menu","./images/splash-screen.png"); // ***
-        s_oSpriteLibrary.addSprite("msg_box","./sprites/msg_box.png");
+        s_oSpriteLibrary.addSprite("msg_box","./images/comparte.png"); // ***
         
         s_oSpriteLibrary.addSprite("but_left","./sprites/but_left.png");
         s_oSpriteLibrary.addSprite("but_right","./sprites/but_right.png");
@@ -105,10 +105,10 @@ function CMain(oData){
         s_oSpriteLibrary.addSprite("but_upright","./sprites/but_up_right.png");
         s_oSpriteLibrary.addSprite("but_downright","./sprites/but_down_right.png");
         
-        s_oSpriteLibrary.addSprite("shot_panel","./sprites/shot_panel.png");
-        s_oSpriteLibrary.addSprite("hit_panel","./sprites/hit_panel.png");
-        s_oSpriteLibrary.addSprite("bullet","./sprites/bullet.png");
-        s_oSpriteLibrary.addSprite("tap_shot","./sprites/tap_shot.png");
+        s_oSpriteLibrary.addSprite("shot_panel","./images/btn_cargar.png"); // ***
+        s_oSpriteLibrary.addSprite("hit_panel","./images/barra.png"); // ***
+        s_oSpriteLibrary.addSprite("bullet","./images/smart-stick.png"); // ***
+        s_oSpriteLibrary.addSprite("tap_shot","./sprites/tap_shot.png"); // ***
         s_oSpriteLibrary.addSprite("hit_icon","./sprites/hit_icon.png");
         s_oSpriteLibrary.addSprite("audio_icon","./sprites/audio_icon.png");
         s_oSpriteLibrary.addSprite("bg_game","./images/back.png"); // ***
