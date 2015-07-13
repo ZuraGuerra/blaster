@@ -60,7 +60,7 @@ function CDuck(oContainer){
         var oData3 = {
                         images: [oSprite3], 
                         // width, height & registration point of each sprite
-                        frames: {width: 175, height: 220, regX: 100, regY: 102}, 
+                        frames: {width: 197, height: 227, regX: 100, regY: 102}, 
                         animations: {  fly: [1,1,"fly"],hit: [2,2,"hit_stop"],hit_stop:[2],fall: [16,44,"fall"]}
                        
         };
