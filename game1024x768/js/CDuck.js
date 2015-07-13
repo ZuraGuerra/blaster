@@ -78,7 +78,7 @@ function CDuck(oContainer){
         var oData5 = {
                         images: [oSprite5], 
                         // width, height & registration point of each sprite
-                        frames: {width: 200, height: 204, regX: 100, regY: 102}, 
+                        frames: {width: 178, height: 230, regX: 100, regY: 102}, 
                         animations: {  fly: [1, 1,"fly"],hit: [2, 2,"hit_stop"],hit_stop:[2],fall: [16,44,"fall"]}
                        
         };
@@ -87,7 +87,7 @@ function CDuck(oContainer){
         var oData6 = {
                         images: [oSprite6], 
                         // width, height & registration point of each sprite
-                        frames: {width: 200, height: 204, regX: 100, regY: 102}, 
+                        frames: {width: 175, height: 230, regX: 100, regY: 102}, 
                         animations: {  fly: [1, 1,"fly"],hit: [2, 2,"hit_stop"],hit_stop:[2],fall: [16,44,"fall"]}
                        
         };
