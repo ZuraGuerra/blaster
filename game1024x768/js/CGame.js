@@ -304,9 +304,7 @@ function CGame(oData){
     
     
     this.initDuckObj = function(){
-        if(DISABLE_SOUND_MOBILE === false || s_bMobile === false){
-            createjs.Sound.play("duck_intro");
-        }
+        
         
         //Set random start position
         if(_iCurStage===DUCK_ON_SCREEN.length){

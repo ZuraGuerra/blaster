@@ -30,9 +30,11 @@ function CMain(oData){
 			DISABLE_SOUND_MOBILE = true;
 		}
 		
+        /*
         if(DISABLE_SOUND_MOBILE === false || s_bMobile === false){
             this._initSounds();
         }
+        */
         
         s_oSpriteLibrary  = new CSpriteLibrary();
 
