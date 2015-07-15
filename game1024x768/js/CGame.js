@@ -91,7 +91,7 @@ function CGame(oData){
         _oScope = new CScope();
         _oInterface = new CInterface();
 
-        _oButUp = createBitmap(s_oSpriteLibrary.getSprite('but_up'));
+        /*_oButUp = createBitmap(s_oSpriteLibrary.getSprite('but_up'));
         _oButUp.x=70;
         _oButUp.y=550;
         s_oStage.addChild(_oButUp);
@@ -129,7 +129,7 @@ function CGame(oData){
         _oButDownLeft =createBitmap(s_oSpriteLibrary.getSprite('but_downleft'));
         _oButDownLeft.x=14;
         _oButDownLeft.y=656;
-        s_oStage.addChild(_oButDownLeft);
+        s_oStage.addChild(_oButDownLeft);*/
 
         _oHelpPanel = CHelpPanel();
     

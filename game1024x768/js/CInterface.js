@@ -32,8 +32,8 @@ function CInterface(){
         _oLifePanel.y = 600;
         s_oStage.addChild(_oLifePanel);
         
-        _oButShot = new CGfxButton(897,688,s_oSpriteLibrary.getSprite('shot_panel'),true);
-        _oButShot.addEventListener(ON_MOUSE_UP, this._onShot, this);
+        /* _oButShot = new CGfxButton(897,688,s_oSpriteLibrary.getSprite('shot_panel'),true);
+        _oButShot.addEventListener(ON_MOUSE_UP, this._onShot, this); Fire móvil*/
 
         _oHitPanel = createBitmap(s_oSpriteLibrary.getSprite('hit_panel'));
         _oHitPanel.x = 218;
@@ -156,8 +156,8 @@ function CInterface(){
     this.unload = function(){
         _oButExit.unload();
         _oButExit = null;
-        _oButShot.unload();
-        _oButShot = null;
+      //  _oButShot.unload(); Fire móvil
+      //  _oButShot = null;
         
         if(DISABLE_SOUND_MOBILE === false || s_bMobile === false){
             _oAudioToggle.unload();
