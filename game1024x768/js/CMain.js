@@ -109,12 +109,12 @@ function CMain(oData){
         s_oSpriteLibrary.addSprite("hit_panel","./images/barra.png"); // ***
         s_oSpriteLibrary.addSprite("bullet","./images/smart-stick.png"); // ***
         s_oSpriteLibrary.addSprite("tap_shot","./sprites/tap_shot.png"); // ***
-        s_oSpriteLibrary.addSprite("hit_icon","./sprites/hit_icon.png");
+        s_oSpriteLibrary.addSprite("hit_icon","./images/hit_icon.png"); // ***
         s_oSpriteLibrary.addSprite("audio_icon","./sprites/audio_icon.png");
         s_oSpriteLibrary.addSprite("bg_game","./images/back.png"); // ***
         s_oSpriteLibrary.addSprite("grass","./sprites/grass.png");
         s_oSpriteLibrary.addSprite("tree","./sprites/tree.png");
-        s_oSpriteLibrary.addSprite("scope","./images/mira.png");
+        s_oSpriteLibrary.addSprite("scope","./images/mira.png"); // ***
         s_oSpriteLibrary.addSprite("tap_shot","./sprites/tap_shot.png");
         s_oSpriteLibrary.addSprite("duck_1","./images/famoso1.png"); // ***
         s_oSpriteLibrary.addSprite("duck_2","./images/famoso2.png"); // ***
