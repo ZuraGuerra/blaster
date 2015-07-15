@@ -8,8 +8,8 @@ function CMenu(){
         _oBg = createBitmap(s_oSpriteLibrary.getSprite('bg_menu'));
         s_oStage.addChild(_oBg);
 
-        var oSprite = s_oSpriteLibrary.getSprite('bg_menu');
-        _oButPlay = new CTextButton((CANVAS_WIDTH/4),CANVAS_HEIGHT -700,oSprite," ","walibi0615bold","#ffffff",40);
+        var oSprite = s_oSpriteLibrary.getSprite('but_play');
+        _oButPlay = new CTextButton((CANVAS_WIDTH/1.23),CANVAS_HEIGHT -100,oSprite," ","walibi0615bold","#ffffff",40);
         _oButPlay.addEventListener(ON_MOUSE_UP, this._onButPlayRelease, this);
         
         var oExitX;
