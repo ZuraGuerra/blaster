@@ -68,9 +68,9 @@ function CInterface(){
         _oAmmoText.visible=false;
         s_oStage.addChild(_oAmmoText);
         
-        _oLifeNum = new createjs.Text("X "+PLAYER_LIVES,"bold 22px walibi0615bold", "#ffffff");
-        _oLifeNum.x = 895;
-        _oLifeNum.y = 630;
+        _oLifeNum = new createjs.Text("X "+PLAYER_LIVES,"bold 18px walibi0615bold", "#ffffff");
+        _oLifeNum.x = 875;
+        _oLifeNum.y = 645;
         _oLifeNum.textAlign="right";
 		_oLifeNum.textBaseline = "alphabetic";
         s_oStage.addChild(_oLifeNum);
