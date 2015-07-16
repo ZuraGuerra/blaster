@@ -28,6 +28,7 @@
 	<script type="text/javascript" src="js/CDuck.js"></script>
 	<script type="text/javascript" src="js/CScope.js"></script>
 	<script type="text/javascript" src="js/CScoreText.js"></script>
+
     <script src="https://cdn.firebase.com/js/client/2.2.7/firebase.js"></script>
     <script type="text/javascript" src="js/ranking.js"></script>
         
@@ -40,21 +41,24 @@
                                             scope_accelleration:2,    //SCOPE ACCELLERATION
 											scope_friction:0.85,      //SCOPE FRICTION
 											max_scope_speed:40,       //MAXIMUM SCOPE SPEED
-											num_bullets:3,            //NUMBER OF PLAYER BULLETS FOR EACH SHOT LEVEL
+											num_bullets:4,            //NUMBER OF PLAYER BULLETS FOR EACH SHOT LEVEL
 											hit_score: 100,           //POINTS GAINED WHEN DUCK IS HITTEN
 											bonus_time:4000,          //BONUS TIME IN MILLISECONDS
 											lives:4,                  //NUMBER OF PLAYER LIVES
-											duck_increase_speed: 0.5, //INCREASE THIS VALUE TO SPEED UP DUCKS AFTER EACH LEVEL SHOT
+											duck_increase_speed: 0.6, //INCREASE THIS VALUE TO SPEED UP DUCKS AFTER EACH LEVEL SHOT
 											duck_occurence: [ 1,  //NUMBER OF DUCKS IN SHOT 1
 															  1,  //NUMBER OF DUCKS IN SHOT 2
-															  1,  //NUMBER OF DUCKS IN SHOT 3
+															  2,  //NUMBER OF DUCKS IN SHOT 3
 															  1,  //NUMBER OF DUCKS IN SHOT 4
-															  1,  //NUMBER OF DUCKS IN SHOT 5
+															  3,  //NUMBER OF DUCKS IN SHOT 5
 															  2,  //NUMBER OF DUCKS IN SHOT 6
-															  2,  //NUMBER OF DUCKS IN SHOT 7
-															  2,  //NUMBER OF DUCKS IN SHOT 8
+															  1,  //NUMBER OF DUCKS IN SHOT 7
+															  3,  //NUMBER OF DUCKS IN SHOT 8
 															  2,  //NUMBER OF DUCKS IN SHOT 9
-															  3   //NUMBER OF DUCKS IN SHOT 10
+															  3,   //NUMBER OF DUCKS IN SHOT 10
+                                                              1,
+                                                              1,
+                                                              4,
 																  //ADD NEW DUCK OCCURENCE HERE IF YOU NEED...
 															]
                                            });
