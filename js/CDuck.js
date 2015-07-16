@@ -42,7 +42,7 @@ function CDuck(oContainer){
         var oData = {
                         images: [oSprite], 
                         // width, height & registration point of each sprite
-                        frames: {width: 283.5, height: 198.5, regX: 100, regY: 102}, 
+                        frames: {width: 283.5, height: 198.5, regX: 144, regY: 123}, 
                         animations: {  fly: [0,4],hit: [5,6,"hit_stop"],hit_stop:[6],fall: [8, "fall"]}
                        
         };     
@@ -51,8 +51,8 @@ function CDuck(oContainer){
         var oData2 = {
                         images: [oSprite2], 
                         // width, height & registration point of each sprite
-                        frames: {width: 265, height: 180, regX: 100, regY: 102}, 
-                        animations: {  fly: [3,4],hit: [7,15,"hit_stop"],hit_stop:[5],fall: [16,44,"fall"]}
+                        frames: {width: 283.5, height: 198.5, regX: 144, regY: 123}, 
+                        animations: {  fly: [0,4],hit: [5,6,"hit_stop"],hit_stop:[6],fall: [8, "fall"]}
                        
         };
         
@@ -60,11 +60,12 @@ function CDuck(oContainer){
         var oData3 = {
                         images: [oSprite3], 
                         // width, height & registration point of each sprite
-                        frames: {width: 265, height: 180, regX: 100, regY: 102}, 
-                        animations: {  fly: [3,4],hit: [7,15,"hit_stop"],hit_stop:[5],fall: [16,44,"fall"]}
+                        frames: {width: 283.5, height: 198.5, regX: 144, regY: 123}, 
+                        animations: {  fly: [0,4],hit: [5,6,"hit_stop"],hit_stop:[6],fall: [8, "fall"]}
                        
         };
         
+        /*
         var oSprite4 = s_oSpriteLibrary.getSprite('duck_4');
         var oData4 = {
                         images: [oSprite4], 
@@ -91,6 +92,7 @@ function CDuck(oContainer){
                         animations: {  fly: [1, 1,"fly"],hit: [2, 2,"hit_stop"],hit_stop:[2],fall: [16,44,"fall"]}
                        
         };
+        */
         
         _oRect = new createjs.Rectangle(0,0, 160, 80);
               

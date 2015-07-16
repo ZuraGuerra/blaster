@@ -146,9 +146,12 @@ function CInterface(){
         oExitX = CANVAS_WIDTH - (oSprite.width/2) - 80;
         
         if(DISABLE_SOUND_MOBILE === false || s_bMobile === false){
+            /*
+            /*  AUDIO BUTTON (If sound is re-enabled)
             var oSprite = s_oSpriteLibrary.getSprite('audio_icon');
             _oAudioToggle = new CToggle(oExitX,10+ (oSprite.height/2),oSprite,s_bAudioActive);
-            _oAudioToggle.addEventListener(ON_MOUSE_UP, this._onAudioToggle, this);          
+            _oAudioToggle.addEventListener(ON_MOUSE_UP, this._onAudioToggle, this);
+            */         
         }
 
     };

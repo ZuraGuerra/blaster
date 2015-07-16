@@ -118,7 +118,7 @@ function CMain(oData){
         s_oSpriteLibrary.addSprite("tree","./images/tree.png"); // ***
         s_oSpriteLibrary.addSprite("scope","./images/mira.png"); // ***
         s_oSpriteLibrary.addSprite("tap_shot","./sprites/tap_shot.png");
-        s_oSpriteLibrary.addSprite("duck_1","./images/globo1-bien-hecho.png"); // ***
+        s_oSpriteLibrary.addSprite("duck_1","./images/globo1.png"); // ***
         s_oSpriteLibrary.addSprite("duck_2","./images/globo2.png"); // ***
         s_oSpriteLibrary.addSprite("duck_3","./images/globo3.png"); // ***
         s_oSpriteLibrary.addSprite("duck_4","./images/famoso4.png"); // ***
