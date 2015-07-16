@@ -499,7 +499,7 @@ function CGame(oData){
     this.subtractLife=function(){
         _iPlayerLife--;
         
-        if(_iPlayerLife === 0){
+        if(_iPlayerLife < 1){
             this.gameOver();
             _bStartGame=false;
         }

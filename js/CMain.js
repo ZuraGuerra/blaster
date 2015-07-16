@@ -125,9 +125,10 @@ function CMain(oData){
         s_oSpriteLibrary.addSprite("duck_5","./images/famoso5.png"); // ***
         s_oSpriteLibrary.addSprite("duck_6","./images/famoso6.png"); // ***
         s_oSpriteLibrary.addSprite("target","./sprites/target.png");
-        s_oSpriteLibrary.addSprite("life_panel","./sprites/life_panel.png");
+        s_oSpriteLibrary.addSprite("life_panel","./sprites/life_panel.png"); // weird
 		s_oSpriteLibrary.addSprite("help_panel_desktop","./images/gato.png"); // ***
         s_oSpriteLibrary.addSprite("help_panel_mobile","./sprites/help_panel_mobile.png");
+        s_oSpriteLibrary.addSprite("score_panel","./images/puntos.png"); // new
         
         RESOURCE_TO_LOAD += s_oSpriteLibrary.getNumSprites();
         s_oSpriteLibrary.loadSprites();

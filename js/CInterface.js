@@ -21,11 +21,17 @@ function CInterface(){
     var _oAudioToggle;
 
     var _oLifePanel;
+    var _oScorePanel;
     
     
     this._init = function(){
         _iGlobIndex=0;
         _aDuckPane = new Array();
+
+        _oScorePanel = createBitmap(s_oSpriteLibrary.getSprite('score_panel'));
+        _oScorePanel.x = 10;
+        _oScorePanel.y = -5;
+        s_oStage.addChild(_oScorePanel);
         
         _oLifePanel = createBitmap(s_oSpriteLibrary.getSprite('life_panel'));
         _oLifePanel.x = 770;
@@ -47,16 +53,16 @@ function CInterface(){
         
         _oTimeText = new createjs.Text(TEXT_BONUS,"bold 22px walibi0615bold", "#ffffff");
         _oTimeText.x = 360;
-        _oTimeText.y = 658;
+        _oTimeText.y = 659;
         s_oStage.addChild(_oTimeText);
         
-		_oScoreTextBack = new createjs.Text(TEXT_SCORE,"bold 30px walibi0615bold", "#000");
+		_oScoreTextBack = new createjs.Text(TEXT_SCORE,"bold 1px walibi0615bold", "#000");
         _oScoreTextBack.x = 32;
         _oScoreTextBack.y = 12; 
         s_oStage.addChild(_oScoreTextBack);
 		
-        _oScoreText = new createjs.Text(TEXT_SCORE,"bold 30px walibi0615bold", "#ffffff");
-        _oScoreText.x = 30;
+        _oScoreText = new createjs.Text(TEXT_SCORE,"bold 1px walibi0615bold", "#ffffff");
+        _oScoreText.x = 18;
         _oScoreText.y = 10; 
         s_oStage.addChild(_oScoreText);
         
@@ -68,28 +74,28 @@ function CInterface(){
         _oAmmoText.visible=false;
         s_oStage.addChild(_oAmmoText);
         
-        _oLifeNum = new createjs.Text("X "+PLAYER_LIVES,"bold 18px walibi0615bold", "#ffffff");
+        _oLifeNum = new createjs.Text("X "+PLAYER_LIVES,"bold 18px walibi0615bold", "#fff");
         _oLifeNum.x = 875;
         _oLifeNum.y = 645;
         _oLifeNum.textAlign="right";
 		_oLifeNum.textBaseline = "alphabetic";
         s_oStage.addChild(_oLifeNum);
         
-		_oScoreNumberBack = new createjs.Text("0","bold 30px walibi0615bold", "#000");
+		_oScoreNumberBack = new createjs.Text("0","bold 1px walibi0615bold", "#000");
         _oScoreNumberBack.x = 172;
         _oScoreNumberBack.y = 12;
         s_oStage.addChild(_oScoreNumberBack);
 		
-        _oScoreNumber = new createjs.Text("0","bold 30px walibi0615bold", "#ffffff");
-        _oScoreNumber.x = 170;
-        _oScoreNumber.y = 10;
+        _oScoreNumber = new createjs.Text("0","bold 18px walibi0615bold", "#36ff46");
+        _oScoreNumber.x = 85;
+        _oScoreNumber.y = 28;
         s_oStage.addChild(_oScoreNumber);
 
         _oMultiScore = new createjs.Text("","bold 30px walibi0615bold", "yellow");
 		_oMultiScore.textAlign = "center";
 		_oMultiScore.shadow = new createjs.Shadow("#000", 2, 2, 2);
         
-        _oTimeScore = new createjs.Text("0000","bold 30px ComicSansMS-Bold", "#ffffff");
+        _oTimeScore = new createjs.Text("0000","bold 24px ComicSansMS-Bold", "#ffffff");
         _oTimeScore.x = 660;
         _oTimeScore.y = 682;
         _oTimeScore.textAlign="right";
