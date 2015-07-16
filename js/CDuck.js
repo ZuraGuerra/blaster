@@ -43,7 +43,7 @@ function CDuck(oContainer){
                         images: [oSprite], 
                         // width, height & registration point of each sprite
                         frames: {width: 283.5, height: 198.5, regX: 144, regY: 123}, 
-                        animations: {  fly: [0,4],hit: [5,6,"hit_stop"],hit_stop:[6],fall: [8, "fall"]}
+                        animations: {  fly: [0,4],hit: [5,6,"hit_stop"],hit_stop:[6],fall: [4, "fall"]}
                        
         };     
         

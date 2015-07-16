@@ -518,7 +518,7 @@ function CGame(oData){
         this.unload();
         s_oMain.gotoMenu();
         
-        $(s_oMain).trigger("restart");
+        $(s_oMain).trigger("game_start");
     };
     
     this._onExitHelp = function () {
@@ -531,6 +531,7 @@ function CGame(oData){
         }
         
         _oEndPanel = CEndPanel(s_oSpriteLibrary.getSprite('msg_box'));
+        // ^ ESTO
         _oEndPanel.show(_iScore);
     };
     

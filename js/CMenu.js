@@ -21,7 +21,6 @@ function CMenu(){
         oExitX = CANVAS_WIDTH - (oSprite.width/2) - 80;
         
         if(DISABLE_SOUND_MOBILE === false || s_bMobile === false){
-            /*
             /*  AUDIO BUTTON
             var oSprite = s_oSpriteLibrary.getSprite('audio_icon');
             _oAudioToggle = new CToggle(oExitX,10+ (oSprite.height/2),oSprite,s_bAudioActive);
