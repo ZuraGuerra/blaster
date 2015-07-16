@@ -69,20 +69,7 @@ function CHelpPanel(){
         _oGroup.addChild(_oHelpBg,_oText1Back,_oText1,_oText2Back,_oText2,_oText3Back,_oText3);
         s_oStage.addChild(_oGroup);
 		
-		var oBullet = createBitmap(s_oSpriteLibrary.getSprite('bullet'));
-		oBullet.x = 700;
-		oBullet.y = 460;
-        _oGroup.addChild(oBullet); 
-		
-		oBullet = createBitmap(s_oSpriteLibrary.getSprite('bullet'));
-		oBullet.x = 730;
-		oBullet.y = 460;
-        _oGroup.addChild(oBullet); 
-		
-		oBullet = createBitmap(s_oSpriteLibrary.getSprite('bullet'));
-		oBullet.x = 760;
-		oBullet.y = 460;
-        _oGroup.addChild(oBullet); 
+	
 		
         var oParent = this;
         _oGroup.on("pressup",function(){oParent._onExitHelp()});
