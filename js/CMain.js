@@ -129,6 +129,7 @@ function CMain(oData){
 		s_oSpriteLibrary.addSprite("help_panel_desktop","./images/gato.png"); // ***
         s_oSpriteLibrary.addSprite("help_panel_mobile","./sprites/help_panel_mobile.png");
         s_oSpriteLibrary.addSprite("score_panel","./images/puntos.png"); // new
+        s_oSpriteLibrary.addSprite("time_panel","./images/bonus-time.png"); // new
         
         RESOURCE_TO_LOAD += s_oSpriteLibrary.getNumSprites();
         s_oSpriteLibrary.loadSprites();

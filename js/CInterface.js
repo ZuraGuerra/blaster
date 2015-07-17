@@ -22,20 +22,26 @@ function CInterface(){
 
     var _oLifePanel;
     var _oScorePanel;
+    var _oTimePanel;
     
     
     this._init = function(){
         _iGlobIndex=0;
         _aDuckPane = new Array();
 
+        _oTimePanel = createBitmap(s_oSpriteLibrary.getSprite('time_panel'));
+        _oTimePanel.x = 10;
+        _oTimePanel.y = 12;
+        s_oStage.addChild(_oTimePanel);
+
         _oScorePanel = createBitmap(s_oSpriteLibrary.getSprite('score_panel'));
-        _oScorePanel.x = 10;
-        _oScorePanel.y = -5;
+        _oScorePanel.x = 115;
+        _oScorePanel.y = 2;
         s_oStage.addChild(_oScorePanel);
         
         _oLifePanel = createBitmap(s_oSpriteLibrary.getSprite('life_panel'));
-        _oLifePanel.x = 770;
-        _oLifePanel.y = 600;
+        _oLifePanel.x = 300;
+        _oLifePanel.y = 2;
         s_oStage.addChild(_oLifePanel);
         
         /* _oButShot = new CGfxButton(897,688,s_oSpriteLibrary.getSprite('shot_panel'),true);
@@ -52,8 +58,8 @@ function CInterface(){
         s_oStage.addChild(_oHitText);
         
         _oTimeText = new createjs.Text(TEXT_BONUS,"bold 22px walibi0615bold", "#ffffff");
-        _oTimeText.x = 360;
-        _oTimeText.y = 659;
+        _oTimeText.x = 130;
+        _oTimeText.y = 70;
         s_oStage.addChild(_oTimeText);
         
 		_oScoreTextBack = new createjs.Text(TEXT_SCORE,"bold 1px walibi0615bold", "#000");
@@ -75,29 +81,29 @@ function CInterface(){
         s_oStage.addChild(_oAmmoText);
         
         _oLifeNum = new createjs.Text("X "+PLAYER_LIVES,"bold 18px walibi0615bold", "#fff");
-        _oLifeNum.x = 875;
-        _oLifeNum.y = 645;
+        _oLifeNum.x = 381;
+        _oLifeNum.y = 45;
         _oLifeNum.textAlign="right";
 		_oLifeNum.textBaseline = "alphabetic";
         s_oStage.addChild(_oLifeNum);
         
 		_oScoreNumberBack = new createjs.Text("0","bold 1px walibi0615bold", "#000");
         _oScoreNumberBack.x = 172;
-        _oScoreNumberBack.y = 12;
+        _oScoreNumberBack.y = 15;
         s_oStage.addChild(_oScoreNumberBack);
 		
         _oScoreNumber = new createjs.Text("0","bold 18px walibi0615bold", "#36ff46");
-        _oScoreNumber.x = 85;
-        _oScoreNumber.y = 28;
+        _oScoreNumber.x = 200;
+        _oScoreNumber.y = 24;
         s_oStage.addChild(_oScoreNumber);
 
         _oMultiScore = new createjs.Text("","bold 30px walibi0615bold", "yellow");
 		_oMultiScore.textAlign = "center";
 		_oMultiScore.shadow = new createjs.Shadow("#000", 2, 2, 2);
         
-        _oTimeScore = new createjs.Text("0000","bold 24px ComicSansMS-Bold", "#ffffff");
-        _oTimeScore.x = 660;
-        _oTimeScore.y = 682;
+        _oTimeScore = new createjs.Text("0000","bold 20px ComicSansMS-Bold", "#ffffff");
+        _oTimeScore.x = 440;
+        _oTimeScore.y = 92;
         _oTimeScore.textAlign="right";
 		_oTimeScore.textBaseline = "alphabetic";
         s_oStage.addChild(_oTimeScore);
