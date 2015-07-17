@@ -43,7 +43,7 @@ function CDuck(oContainer){
                         images: [oSprite], 
                         // width, height & registration point of each sprite
                         frames: {width: 283.5, height: 198.5, regX: 144, regY: 123}, 
-                        animations: {  fly: [0,4],hit: [5,6,"hit_stop"],hit_stop:[6],fall: [4, "fall"]}
+                        animations: {  fly: [0],hit: [5,6,"hit_stop"],hit_stop:[6],fall: [4, "fall"]}
                        
         };     
         
@@ -52,7 +52,7 @@ function CDuck(oContainer){
                         images: [oSprite2], 
                         // width, height & registration point of each sprite
                         frames: {width: 283.5, height: 198.5, regX: 144, regY: 123}, 
-                        animations: {  fly: [0,4],hit: [5,6,"hit_stop"],hit_stop:[6],fall: [8, "fall"]}
+                        animations: {  fly: [0],hit: [5,6,"hit_stop"],hit_stop:[6],fall: [8, "fall"]}
                        
         };
         
@@ -61,7 +61,7 @@ function CDuck(oContainer){
                         images: [oSprite3], 
                         // width, height & registration point of each sprite
                         frames: {width: 283.5, height: 198.5, regX: 144, regY: 123}, 
-                        animations: {  fly: [0,4],hit: [5,6,"hit_stop"],hit_stop:[6],fall: [8, "fall"]}
+                        animations: {  fly: [0],hit: [5,6,"hit_stop"],hit_stop:[6],fall: [8, "fall"]}
                        
         };
     
@@ -70,7 +70,7 @@ function CDuck(oContainer){
                         images: [oSprite4], 
                         // width, height & registration point of each sprite
                         frames: {width: 283.5, height: 198.5, regX: 144, regY: 123}, 
-                        animations: {  fly: [0,4],hit: [5,6,"hit_stop"],hit_stop:[6],fall: [8, "fall"]}
+                        animations: {  fly: [0],hit: [5,6,"hit_stop"],hit_stop:[6],fall: [8, "fall"]}
                        
         };
 
@@ -79,7 +79,7 @@ function CDuck(oContainer){
                         images: [oSprite5], 
                         // width, height & registration point of each sprite
                         frames: {width: 283.5, height: 198.5, regX: 144, regY: 123}, 
-                        animations: {  fly: [0,4],hit: [5,6,"hit_stop"],hit_stop:[6],fall: [8, "fall"]}
+                        animations: {  fly: [0],hit: [5,6,"hit_stop"],hit_stop:[6],fall: [8, "fall"]}
                        
         };
 
@@ -88,7 +88,7 @@ function CDuck(oContainer){
                         images: [oSprite6], 
                         // width, height & registration point of each sprite
                         frames: {width: 283.5, height: 198.5, regX: 144, regY: 123}, 
-                        animations: {  fly: [0,4],hit: [5,6,"hit_stop"],hit_stop:[6],fall: [8, "fall"]}
+                        animations: {  fly: [0],hit: [5,6,"hit_stop"],hit_stop:[6],fall: [8, "fall"]}
                        
         };
         
@@ -97,7 +97,7 @@ function CDuck(oContainer){
         _aObjSpriteSheet[0] = new createjs.SpriteSheet(oData);
         _aObjSpriteSheet[1] = new createjs.SpriteSheet(oData2);
         _aObjSpriteSheet[2] = new createjs.SpriteSheet(oData3);
-       _aObjSpriteSheet[3] = new createjs.SpriteSheet(oData4);
+        _aObjSpriteSheet[3] = new createjs.SpriteSheet(oData4);
         _aObjSpriteSheet[4] = new createjs.SpriteSheet(oData5);
         _aObjSpriteSheet[5] = new createjs.SpriteSheet(oData6);
         
