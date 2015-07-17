@@ -44,8 +44,8 @@ function CInterface(){
         _oLifePanel.y = 2;
         s_oStage.addChild(_oLifePanel);
         
-        /* _oButShot = new CGfxButton(897,688,s_oSpriteLibrary.getSprite('shot_panel'),true);
-        _oButShot.addEventListener(ON_MOUSE_UP, this._onShot, this); Fire móvil*/
+        _oButShot = new CGfxButton(897,688,s_oSpriteLibrary.getSprite('shot_panel'),true);
+        _oButShot.addEventListener(ON_MOUSE_UP, this._onShot, this);
 
         _oHitPanel = createBitmap(s_oSpriteLibrary.getSprite('hit_panel'));
         _oHitPanel.x = 20;

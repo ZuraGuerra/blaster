@@ -350,13 +350,13 @@ function CGame(oData){
         //SPACEBAR
         if(evt.keyCode === 32 && _bStartGame===true){
             s_oGame.onShot();
-        }else if(evt.keyCode === 37) {
+        }else if(evt.keyCode === 37 || evt.keyCode === 65) {
             _oScope.leftStop();
-        }else if(evt.keyCode === 38) {
+        }else if(evt.keyCode === 38 || evt.keyCode === 87) {
             _oScope.upStop();
-        }else if(evt.keyCode === 39) {
+        }else if(evt.keyCode === 39 || evt.keyCode === 68) {
             _oScope.rightStop();
-        }else if(evt.keyCode === 40) {
+        }else if(evt.keyCode === 40 || evt.keyCode === 83) {
             _oScope.downStop();
         }
         
@@ -368,23 +368,27 @@ function CGame(oData){
         }  
 
         switch(evt.keyCode) {  
-           // left  
+           // left
+           case 65:  
            case 37: {
                    s_oGame.onLeft();
                    break; 
                }
-           //up  
+           //up
+           case 87:  
            case 38: {
                    s_oGame.onUp();
                    break; 
                }         
                 
-           // right  
+           // right
+           case 68:  
            case 39: {
                    s_oGame.onRight();
                    break; 
                }
 		   //down
+           case 83:
            case 40: {
                    s_oGame.onDown();
                    break; 
