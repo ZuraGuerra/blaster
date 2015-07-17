@@ -48,8 +48,8 @@ function CInterface(){
         _oButShot.addEventListener(ON_MOUSE_UP, this._onShot, this); Fire móvil*/
 
         _oHitPanel = createBitmap(s_oSpriteLibrary.getSprite('hit_panel'));
-        _oHitPanel.x = 218;
-        _oHitPanel.y = 643;
+        _oHitPanel.x = 20;
+        _oHitPanel.y = 588;
         s_oStage.addChild(_oHitPanel);
         
         _oHitText = new createjs.Text(TEXT_HIT,"bold 30px walibi0615bold", "#ffffff");
