@@ -64,14 +64,13 @@ function CDuck(oContainer){
                         animations: {  fly: [0,4],hit: [5,6,"hit_stop"],hit_stop:[6],fall: [8, "fall"]}
                        
         };
-        
-        /*
+    
         var oSprite4 = s_oSpriteLibrary.getSprite('duck_4');
         var oData4 = {
                         images: [oSprite4], 
                         // width, height & registration point of each sprite
-                        frames: {width: 179, height: 230, regX: 100, regY: 102}, 
-                        animations: {  fly: [1,1,"fly"],hit: [2, 2,"hit_stop"],hit_stop:[2],fall: [16,44,"fall"]}
+                        frames: {width: 283.5, height: 198.5, regX: 144, regY: 123}, 
+                        animations: {  fly: [0,4],hit: [5,6,"hit_stop"],hit_stop:[6],fall: [8, "fall"]}
                        
         };
 
@@ -79,8 +78,8 @@ function CDuck(oContainer){
         var oData5 = {
                         images: [oSprite5], 
                         // width, height & registration point of each sprite
-                        frames: {width: 178, height: 230, regX: 100, regY: 102}, 
-                        animations: {  fly: [1, 1,"fly"],hit: [2, 2,"hit_stop"],hit_stop:[2],fall: [16,44,"fall"]}
+                        frames: {width: 283.5, height: 198.5, regX: 144, regY: 123}, 
+                        animations: {  fly: [0,4],hit: [5,6,"hit_stop"],hit_stop:[6],fall: [8, "fall"]}
                        
         };
 
@@ -88,21 +87,20 @@ function CDuck(oContainer){
         var oData6 = {
                         images: [oSprite6], 
                         // width, height & registration point of each sprite
-                        frames: {width: 175, height: 230, regX: 100, regY: 102}, 
-                        animations: {  fly: [1, 1,"fly"],hit: [2, 2,"hit_stop"],hit_stop:[2],fall: [16,44,"fall"]}
+                        frames: {width: 283.5, height: 198.5, regX: 144, regY: 123}, 
+                        animations: {  fly: [0,4],hit: [5,6,"hit_stop"],hit_stop:[6],fall: [8, "fall"]}
                        
         };
-        */
         
         _oRect = new createjs.Rectangle(0,0, 160, 80);
               
         _aObjSpriteSheet[0] = new createjs.SpriteSheet(oData);
         _aObjSpriteSheet[1] = new createjs.SpriteSheet(oData2);
         _aObjSpriteSheet[2] = new createjs.SpriteSheet(oData3);
-       /* _aObjSpriteSheet[3] = new createjs.SpriteSheet(oData4);
+       _aObjSpriteSheet[3] = new createjs.SpriteSheet(oData4);
         _aObjSpriteSheet[4] = new createjs.SpriteSheet(oData5);
         _aObjSpriteSheet[5] = new createjs.SpriteSheet(oData6);
-        */
+        
         _oSprite = createSprite(_aObjSpriteSheet[0], "fly",100,102,200,204);
         _oSprite.visible=false;
       
@@ -112,7 +110,7 @@ function CDuck(oContainer){
     };
    
    this._changeSprite = function(){
-        var variable = Math.floor(Math.random()*3);
+        var variable = Math.floor(Math.random()*6);
         _oSprite.spriteSheet=_aObjSpriteSheet[variable];
         
     };

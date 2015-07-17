@@ -110,22 +110,22 @@ function CMain(oData){
         s_oSpriteLibrary.addSprite("shot_panel","./images/btn_cargar.png"); // ***
         s_oSpriteLibrary.addSprite("hit_panel","./images/barra.png"); // ***
         s_oSpriteLibrary.addSprite("bullet","./images/smart-stick.png"); // ***
-        s_oSpriteLibrary.addSprite("tap_shot","./sprites/tap_shot.png"); // ***
+        s_oSpriteLibrary.addSprite("tap_shot","./images/goo.png"); // ***
         s_oSpriteLibrary.addSprite("hit_icon","./images/hit_icon.png"); // ***
         s_oSpriteLibrary.addSprite("audio_icon","./sprites/audio_icon.png");
         s_oSpriteLibrary.addSprite("bg_game","./images/back.png"); // ***
         s_oSpriteLibrary.addSprite("grass","./images/grass.png"); // ***
         s_oSpriteLibrary.addSprite("tree","./images/tree.png"); // ***
         s_oSpriteLibrary.addSprite("scope","./images/mira.png"); // ***
-        s_oSpriteLibrary.addSprite("tap_shot","./sprites/tap_shot.png");
-        s_oSpriteLibrary.addSprite("duck_1","./images/globo1.png"); // ***
-        s_oSpriteLibrary.addSprite("duck_2","./images/globo2.png"); // ***
-        s_oSpriteLibrary.addSprite("duck_3","./images/globo3.png"); // ***
-        s_oSpriteLibrary.addSprite("duck_4","./images/famoso4.png"); // ***
-        s_oSpriteLibrary.addSprite("duck_5","./images/famoso5.png"); // ***
-        s_oSpriteLibrary.addSprite("duck_6","./images/famoso6.png"); // ***
+        s_oSpriteLibrary.addSprite("tap_shot","./images/goo.png"); // ***
+        s_oSpriteLibrary.addSprite("duck_1","./images/target1.png"); // ***
+        s_oSpriteLibrary.addSprite("duck_2","./images/target2.png"); // ***
+        s_oSpriteLibrary.addSprite("duck_3","./images/target3.png"); // ***
+        s_oSpriteLibrary.addSprite("duck_4","./images/target4.png"); // ***
+        s_oSpriteLibrary.addSprite("duck_5","./images/target5.png"); // ***
+        s_oSpriteLibrary.addSprite("duck_6","./images/target6.png"); // ***
         s_oSpriteLibrary.addSprite("target","./sprites/target.png");
-        s_oSpriteLibrary.addSprite("life_panel","./sprites/life_panel.png"); // weird
+        s_oSpriteLibrary.addSprite("life_panel","./images/vida.png"); // weird
 		s_oSpriteLibrary.addSprite("help_panel_desktop","./images/gato.png"); // ***
         s_oSpriteLibrary.addSprite("help_panel_mobile","./sprites/help_panel_mobile.png");
         s_oSpriteLibrary.addSprite("score_panel","./images/puntos.png"); // new
