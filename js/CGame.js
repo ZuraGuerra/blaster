@@ -501,7 +501,11 @@ function CGame(oData){
     };
     
     this.subtractLife=function(){
-        _iPlayerLife--;
+
+        if (_iPlayerLife > 0) {
+            _iPlayerLife--;
+        }
+        
         
         if(_iPlayerLife < 1){
             this.gameOver();

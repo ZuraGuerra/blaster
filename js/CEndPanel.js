@@ -11,6 +11,10 @@ function CEndPanel(oSpriteBg){
         
         _oBg = createBitmap(oSpriteBg);
 
+        _oFacebook = createBitmap(s_oSpriteLibrary.getSprite('facebook'));
+        _oFacebook.x = 300;
+        _oFacebook.y = 300;
+
         _oMsgTextBack = new createjs.Text("","bold 60px walibi0615bold", "#000");
         _oMsgTextBack.x = CANVAS_WIDTH/2 +1;
         _oMsgTextBack.y = (CANVAS_HEIGHT/2)-160;
@@ -35,7 +39,7 @@ function CEndPanel(oSpriteBg){
         _oGroup.alpha = 0;
         _oGroup.visible=false;
         
-        _oGroup.addChild(_oBg, _oScoreTextBack,_oScoreText,_oMsgTextBack,_oMsgText);
+        _oGroup.addChild(_oBg, _oScoreTextBack,_oScoreText,_oMsgTextBack,_oMsgText, _oFacebook);
 
         s_oStage.addChild(_oGroup);
     };

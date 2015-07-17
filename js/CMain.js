@@ -130,6 +130,9 @@ function CMain(oData){
         s_oSpriteLibrary.addSprite("help_panel_mobile","./sprites/help_panel_mobile.png");
         s_oSpriteLibrary.addSprite("score_panel","./images/puntos.png"); // new
         s_oSpriteLibrary.addSprite("time_panel","./images/bonus-time.png"); // new
+        s_oSpriteLibrary.addSprite("facebook","./images/facebook.png"); // new
+        s_oSpriteLibrary.addSprite("google","./images/google+.png"); // new
+        s_oSpriteLibrary.addSprite("twitter","./images/twitter.png"); // new
         
         RESOURCE_TO_LOAD += s_oSpriteLibrary.getNumSprites();
         s_oSpriteLibrary.loadSprites();
