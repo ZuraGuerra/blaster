@@ -44,7 +44,7 @@ function CInterface(){
         _oLifePanel.y = 2;
         s_oStage.addChild(_oLifePanel);
         
-        _oButShot = new CGfxButton(897,688,s_oSpriteLibrary.getSprite('shot_panel'),true);
+        _oButShot = new CGfxButton(855,676,s_oSpriteLibrary.getSprite('shot_panel'),true);
         _oButShot.addEventListener(ON_MOUSE_UP, this._onShot, this);
 
         _oHitPanel = createBitmap(s_oSpriteLibrary.getSprite('hit_panel'));
@@ -159,7 +159,7 @@ function CInterface(){
         var oExitX;
         
         var oSprite = s_oSpriteLibrary.getSprite('but_exit');
-        _oButExit = new CGfxButton(CANVAS_WIDTH - (oSprite.height/2)- 10,(oSprite.height/2) + 10,oSprite,true);
+        _oButExit = new CGfxButton(CANVAS_WIDTH - (oSprite.height/2)- 10,(CANVAS_HEIGHT - 30),oSprite,true);
         _oButExit.addEventListener(ON_MOUSE_UP, this._onExit, this);
         
         oExitX = CANVAS_WIDTH - (oSprite.width/2) - 80;
