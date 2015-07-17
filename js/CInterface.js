@@ -120,8 +120,14 @@ function CInterface(){
         
         var oObjSpriteSheet = new createjs.SpriteSheet(oData);
         
-        var iX = 230;
-        var iY = 710;
+        var iX = 407;
+        var iY = 615;
+
+        
+        /*
+        var iX = 350;
+        var iY = 680;
+        */
         
         for(var i=0; i<9; i++){
             var oIcon = createSprite(oObjSpriteSheet, "nohit",0,0,51,43);
@@ -132,13 +138,14 @@ function CInterface(){
            
             
             _aHitIcon[i] = oIcon;            
-            iX += 58;            
+            iX += 35;            
         }
 
         _aBullet = new Array();
         
-        var jX = 800;
+        var jX = 400;
         var jY = 680;
+
         for(var i=0; i<NUM_BULLETS; i++){
             var oIcon = createBitmap(s_oSpriteLibrary.getSprite('bullet'));
             oIcon.x = jX;
