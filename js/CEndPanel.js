@@ -6,6 +6,19 @@ function CEndPanel(oSpriteBg){
     var _oMsgText;
     var _oMsgTextBack;
     var _oGroup;
+
+
+    db.orderByValue().limitToLast(5).once("value", function(snapshot) {
+
+        var topFive = snapshot.exportVal();
+
+        return topFive;
+        
+        snapshot.forEach(function(data) {
+            console.log(data.key() + " hizo " + data.val() + " puntos.");
+        });
+
+    });
     
     this._init = function(oSpriteBg){
         

@@ -1,6 +1,6 @@
-function CGame(oData){
+var db = new Firebase("https://blaster.firebaseio.com/");
 
-    var db = new Firebase("https://blaster.firebaseio.com/");
+function CGame(oData){
 
     var _iScore;
     var _iBullets;  
@@ -544,6 +544,8 @@ function CGame(oData){
         _oEndPanel = CEndPanel(s_oSpriteLibrary.getSprite('msg_box'));
         // ^ ESTO
 
+        if (_iScore > 0) {
+
         vex.dialog.buttons.YES.text = "Guardar puntuación";
         vex.dialog.buttons.NO.text = "No guardar";
 
@@ -562,6 +564,9 @@ function CGame(oData){
             }
 
         });
+
+        };
+        
 
         _oEndPanel.show(_iScore);
 

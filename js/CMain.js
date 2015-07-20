@@ -96,7 +96,7 @@ function CMain(oData){
         s_oSpriteLibrary.addSprite("but_play","./images/play.png"); // ***
         s_oSpriteLibrary.addSprite("but_exit","./images/close.png"); // ***
         s_oSpriteLibrary.addSprite("bg_menu","./images/splash-screen.png"); // ***
-        s_oSpriteLibrary.addSprite("msg_box","./images/comparte.png"); // ***
+        s_oSpriteLibrary.addSprite("msg_box","./images/msg_box.png"); // ***
         
         s_oSpriteLibrary.addSprite("but_left","./sprites/but_left.png");
         s_oSpriteLibrary.addSprite("but_right","./sprites/but_right.png");
