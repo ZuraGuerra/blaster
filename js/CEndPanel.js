@@ -94,10 +94,10 @@ function CEndPanel(oSpriteBg){
     };
     
     this._onExit = function(){
-        //_oGroup.off("mousedown",this._onExit);
-        //s_oStage.removeChild(_oGroup);
+        _oGroup.off("mousedown",this._onExit);
+        s_oStage.removeChild(_oGroup);
         
-        // s_oGame.onExit();
+        s_oGame.onExit();
     };
     
     this._init(oSpriteBg);
