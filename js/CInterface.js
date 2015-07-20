@@ -162,6 +162,7 @@ function CInterface(){
         _oButExit = new CGfxButton(CANVAS_WIDTH - (oSprite.height/2)- 10,(CANVAS_HEIGHT - 30),oSprite,true);
         _oButExit.addEventListener(ON_MOUSE_UP, this._onExit, this);
         
+        
         oExitX = CANVAS_WIDTH - (oSprite.width/2) - 80;
         
         if(DISABLE_SOUND_MOBILE === false || s_bMobile === false){

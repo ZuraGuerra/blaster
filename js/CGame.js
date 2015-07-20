@@ -564,6 +564,7 @@ function CGame(oData){
         });
 
         _oEndPanel.show(_iScore);
+
     };
     
     this.checkController = function(){

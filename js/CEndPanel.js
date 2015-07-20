@@ -11,21 +11,6 @@ function CEndPanel(oSpriteBg){
         
         _oBg = createBitmap(oSpriteBg);
 
-        _oFacebook = createBitmap(s_oSpriteLibrary.getSprite('facebook'));
-        _oFacebook.x = CANVAS_WIDTH/2;
-        _oFacebook.y = 300;
-        _oFacebook.addEventListener(ON_MOUSE_UP, _oFacebook.share, this);
-        _oFacebook.share = function() {
-            window.location = "http://facebook.com";
-        }
-
-        _oTwitter = createBitmap(s_oSpriteLibrary.getSprite('twitter'));
-        _oTwitter.x = CANVAS_WIDTH/2;
-        _oTwitter.y = 400;
-
-        _oGoogle = createBitmap(s_oSpriteLibrary.getSprite('google'));
-        _oGoogle.x = CANVAS_WIDTH/2;
-        _oGoogle.y = 500;
 
         _oMsgTextBack = new createjs.Text("","bold 60px walibi0615bold", "#000");
         _oMsgTextBack.x = CANVAS_WIDTH/2 +1;
@@ -51,7 +36,7 @@ function CEndPanel(oSpriteBg){
         _oGroup.alpha = 0;
         _oGroup.visible=false;
         
-        _oGroup.addChild(_oBg, _oScoreTextBack,_oScoreText,_oMsgTextBack,_oMsgText, _oFacebook, _oTwitter, _oGoogle);
+        _oGroup.addChild(_oBg, _oScoreTextBack,_oScoreText,_oMsgTextBack,_oMsgText);
 
         s_oStage.addChild(_oGroup);
     };

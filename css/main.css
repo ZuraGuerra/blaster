@@ -12,7 +12,7 @@ root {
 
 body{
     background-color: #9dc1ff;
-    background-repeat: repeat-x;
+    background-repeat: repeat;
     background-position: top;
     background-image: url(../images/back-website.png);    
 }
@@ -25,6 +25,11 @@ body{
     -webkit-user-select: none;
 }
 
+a {
+    display:inline-block;
+    margin:20px;
+}
+
 ::selection { background: transparent;color:inherit; }
 ::-moz-selection { background: transparent;color:inherit; }
 
@@ -32,7 +37,7 @@ body{
     width:768px;
     height: 1024px;
     
-    position: absolute;
+    display:block;
     
     
 }

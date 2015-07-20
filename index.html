@@ -36,10 +36,11 @@
 	<script type="text/javascript" src="js/CScoreText.js"></script>
 
     <script src="https://cdn.firebase.com/js/client/2.2.7/firebase.js"></script>
+    
         
     </head>
     <body ondragstart="return false;" ondrop="return false;" >
-	<div style="position: fixed; background-color: transparent; top: 0px; left: 0px; width: 100%; height: 100%"></div>
+	<!-- <div style="position: fixed; background-color: transparent; top: 0px; left: 0px; width: 100%; height: 100%"></div> -->
           <script>
             $(document).ready(function(){
                      var oMain = new CMain({
@@ -82,7 +83,25 @@
            });
 
         </script>
-        <canvas id="canvas" class='ani_hack' width="1024" height="768"> </canvas>
+        <center>
+
+
+
+            <a id="fb" target="_blank"><img alt="comparte en facebook" src="../images/facebook.png"/></a>
+
+
+            <a id="tw" target="_blank"><img alt="comparte en twitter" src="../images/twitter.png"/></a>
+
+            <a id="gp" target="_blank"><img alt="comparte en google plus" src="../images/google+.png"/></a>
+
+            <canvas id="canvas" class='ani_hack' width="1024" height="768"> </canvas>
+
+            
+
+        </center>
+
         
+
+        <script type="text/javascript" src="js/sharer.js"></script>
     </body>
 </html>
