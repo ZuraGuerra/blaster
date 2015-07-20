@@ -540,6 +540,19 @@ function CGame(oData){
         
         _oEndPanel = CEndPanel(s_oSpriteLibrary.getSprite('msg_box'));
         // ^ ESTO
+
+        vex.dialog.buttons.YES.text = "Guardar puntuación";
+        vex.dialog.buttons.NO.text = "No guardar";
+        
+        vex.dialog.prompt({
+            message: "¡FELICIDADES, hiciste "+_iScore+" puntos!",
+            placeholder: "Escribe tu nombre aquí",
+            callback: function(value) {
+                return console.log(value);
+            }
+
+        });
+
         _oEndPanel.show(_iScore);
     };
     

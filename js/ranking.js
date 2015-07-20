@@ -1,17 +1,13 @@
-new Firebase("https://blaster.firebaseio.com/");
-
-var ranking = ref.child("ranking")
+var db = new Firebase("https://blaster.firebaseio.com/");
 
 newRecord = function(nick, score) {
-	var nick = "lala";
-	var score = iScore;
+	nick = "lala";
+	//var score = _iScore;
 
-	ranking.set({
-		nick: {
-			score: score
-		}
-	});
+	var newEntry = {
+		nick: score
+	};
+
+	db.update(newEntry);
 
 };
-
-
