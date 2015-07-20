@@ -546,7 +546,7 @@ function CGame(oData){
 
         if (_iScore > 0) {
 
-        vex.dialog.buttons.YES.text = "Guardar puntuación";
+        vex.dialog.buttons.YES.text = "Guardar";
         vex.dialog.buttons.NO.text = "No guardar";
 
         vex.dialog.prompt({

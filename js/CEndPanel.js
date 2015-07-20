@@ -1,55 +1,50 @@
 function CEndPanel(oSpriteBg){
     
     var _oBg;
-    var _oScoreTextBack;
-    var _oScoreText;
-    var _oMsgText;
-    var _oMsgTextBack;
     var _oGroup;
+    var _rankings;
 
+    function labelWithShadow (x, y) {
+        var shadow = new createjs.Text("","bold 40px walibi0615bold", "#000");
+        shadow.x = x + 1;
+        shadow.y = y;
+        shadow.textAlign = "center";
 
-    db.orderByValue().limitToLast(5).once("value", function(snapshot) {
+        var label = new createjs.Text("","bold 40px walibi0615bold", "#ffffff");
+        label.x = x;
+        label.y = y + 2;
+        label.textAlign = "center";
+     
+        return {label: label, shadow: shadow};    
+    }
 
-        var topFive = snapshot.exportVal();
-
-        return topFive;
-        
-        snapshot.forEach(function(data) {
-            console.log(data.key() + " hizo " + data.val() + " puntos.");
-        });
-
-    });
     
     this._init = function(oSpriteBg){
+
         
         _oBg = createBitmap(oSpriteBg);
 
-
-        _oMsgTextBack = new createjs.Text("","bold 60px walibi0615bold", "#000");
-        _oMsgTextBack.x = CANVAS_WIDTH/2 +1;
-        _oMsgTextBack.y = (CANVAS_HEIGHT/2)-160;
-        _oMsgTextBack.textAlign = "center";
-
-        _oMsgText = new createjs.Text("","bold 60px walibi0615bold", "#ffffff");
-        _oMsgText.x = CANVAS_WIDTH/2;
-        _oMsgText.y = (CANVAS_HEIGHT/2)-162;
-        _oMsgText.textAlign = "center";
-        
-        _oScoreTextBack = new createjs.Text("","bold 40px walibi0615bold", "#000");
-        _oScoreTextBack.x = CANVAS_WIDTH/2 +1;
-        _oScoreTextBack.y = (CANVAS_HEIGHT/2) + 50;
-        _oScoreTextBack.textAlign = "center";
-        
-        _oScoreText = new createjs.Text("","bold 40px walibi0615bold", "#ffffff");
-        _oScoreText.x = CANVAS_WIDTH/2;
-        _oScoreText.y = (CANVAS_HEIGHT/2) + 52;
-        _oScoreText.textAlign = "center";
-        
+      
+     
         _oGroup = new createjs.Container();
         _oGroup.alpha = 0;
         _oGroup.visible=false;
         
-        _oGroup.addChild(_oBg, _oScoreTextBack,_oScoreText,_oMsgTextBack,_oMsgText);
+        _oGroup.addChild(_oBg);
+
+        _rankings = [];
+        for (var i = 0; i < 5; i++) {
+            var xRanking = (CANVAS_WIDTH/2) - 150;
+            var yRanking = (CANVAS_HEIGHT/2) - 100 + (i * 50);
+
+            var _name = labelWithShadow(xRanking, yRanking);
+            var _score = labelWithShadow(xRanking + 250, yRanking);
+
+            _rankings.push({ name: _name, score: _score });
+
+            _oGroup.addChild( _name.label, _name.shadow, _score.label, _score.shadow );
+        }
+
 
         s_oStage.addChild(_oGroup);
     };
@@ -65,13 +60,32 @@ function CEndPanel(oSpriteBg){
     this.show = function(iScore){
         createjs.Sound.play("game_over");
         
-        _oMsgTextBack.text = TEXT_GAMEOVER;
-        _oMsgText.text = TEXT_GAMEOVER;
-        
-        _oScoreTextBack.text = TEXT_SCORE +": "+iScore;
-        _oScoreText.text = TEXT_SCORE +": "+iScore;
-        
+
         _oGroup.visible = true;
+
+
+
+        var topFive = db.orderByValue().limitToLast(5);
+        topFive.on("value", function(snapshot) {
+            var ranking = [];
+            snapshot.forEach(function(data) {
+                ranking.unshift({name: data.key(), score:  data.val()});
+            });
+
+            for(var i = 0; i < 5; i++) {
+               console.log(i, ranking[i]);
+
+               var name = ranking[i] ? ranking[i].name : "";
+               var score = ranking[i] ? ranking[i].score : "";
+
+               var _ranking = _rankings[i];
+               _ranking.name.label.text = name;
+               _ranking.name.shadow.text = name;
+
+               _ranking.score.label.text = score;
+               _ranking.score.shadow.text = score;
+            }
+        });
         
         var oParent = this;
         createjs.Tween.get(_oGroup).to({alpha:1 }, 500).call(function() {oParent._initListener();});
