@@ -1,4 +1,7 @@
 function CGame(oData){
+
+    var db = new Firebase("https://blaster.firebaseio.com/");
+
     var _iScore;
     var _iBullets;  
     var _iNumDuck;
@@ -543,12 +546,19 @@ function CGame(oData){
 
         vex.dialog.buttons.YES.text = "Guardar puntuación";
         vex.dialog.buttons.NO.text = "No guardar";
-        
+
         vex.dialog.prompt({
             message: "¡FELICIDADES, hiciste "+_iScore+" puntos!",
             placeholder: "Escribe tu nombre aquí",
             callback: function(value) {
-                return console.log(value);
+                var nickname = value;
+                var score = _iScore;
+
+                var newEntry = {};
+
+                newEntry[nickname] = score;
+
+                db.update(newEntry);
             }
 
         });

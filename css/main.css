@@ -14,7 +14,7 @@ body{
     background-color: #9dc1ff;
     background-repeat: repeat-x;
     background-position: top;
-    background-image: url(../sprites/bg_tile.jpg);    
+    background-image: url(../images/back-website.png);    
 }
 
 * {
