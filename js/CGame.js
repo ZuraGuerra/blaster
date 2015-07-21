@@ -556,11 +556,14 @@ function CGame(oData){
                 var nickname = value;
                 var score = _iScore;
 
-                var newEntry = {};
+                if (nickname != "false") {
+                    var newEntry = {};
 
-                newEntry[nickname] = score;
+                    newEntry[nickname] = score;
 
-                db.update(newEntry);
+                    db.update(newEntry);
+                }
+                
             }
 
         });
