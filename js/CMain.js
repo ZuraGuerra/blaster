@@ -123,7 +123,6 @@ function CMain(oData){
         s_oSpriteLibrary.addSprite("duck_3","./images/target3.png"); // ***
         s_oSpriteLibrary.addSprite("duck_4","./images/target4.png"); // ***
         s_oSpriteLibrary.addSprite("duck_5","./images/target5.png"); // ***
-        s_oSpriteLibrary.addSprite("duck_6","./images/target3.png"); // ***
         s_oSpriteLibrary.addSprite("target","./sprites/target.png");
         s_oSpriteLibrary.addSprite("life_panel","./images/vida.png"); // weird
 		s_oSpriteLibrary.addSprite("help_panel_desktop","./images/gato.png"); // ***

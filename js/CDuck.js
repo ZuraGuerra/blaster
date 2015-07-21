@@ -83,6 +83,7 @@ function CDuck(oContainer){
                        
         };
 
+/*
         var oSprite6 = s_oSpriteLibrary.getSprite('duck_6');
         var oData6 = {
                         images: [oSprite6], 
@@ -91,6 +92,8 @@ function CDuck(oContainer){
                         animations: {  fly: [0,"fly"],hit: [7,15,"hit_stop"],hit_stop:[15],fall: [16,44,"fall"]}
                   
         };
+
+*/
         
         _oRect = new createjs.Rectangle(0,0, 160, 80);
               
@@ -99,7 +102,7 @@ function CDuck(oContainer){
         _aObjSpriteSheet[2] = new createjs.SpriteSheet(oData3);
         _aObjSpriteSheet[3] = new createjs.SpriteSheet(oData4);
         _aObjSpriteSheet[4] = new createjs.SpriteSheet(oData5);
-        _aObjSpriteSheet[5] = new createjs.SpriteSheet(oData6);
+    //  _aObjSpriteSheet[5] = new createjs.SpriteSheet(oData6);
         
         _oSprite = createSprite(_aObjSpriteSheet[0], "fly",100,102,200,204);
         _oSprite.visible=false;
@@ -110,7 +113,7 @@ function CDuck(oContainer){
     };
    
    this._changeSprite = function(){
-        var variable = Math.floor(Math.random()*6);
+        var variable = Math.floor(Math.random()*5);
         _oSprite.spriteSheet=_aObjSpriteSheet[variable];
         
     };
